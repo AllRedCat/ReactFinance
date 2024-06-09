@@ -1,9 +1,11 @@
+// Imports
 import { Button } from "@/components/ui/button"
 import { Accounts } from "./Accounts"
 import { Categories } from "./Categories"
 import { Transictions } from "./Transictions"
 import { useState } from "react"
 
+// Pega os componentes das paginas
 function AccountsPage() {
   return (<Accounts />)
 }
@@ -16,15 +18,14 @@ function TransictionsPage() {
   return (<Transictions />)
 }
 
-// function Home() {
-//   return (<Home />)
-// }
-
+// Renderiza a página principal
 function App() {
+  // Variáveis para controlar a exibição das páginas
   const [ShowAccounts, setAccountsPage] = useState(false);
   const [ShowCategories, setCategoriesPage] = useState(false);
   const [ShowTransictions, setTransictionsPage] = useState(false);
 
+  // Funções para mostrar as páginas
   function AccountsShow() {
     setAccountsPage(true);
     setCategoriesPage(false);
@@ -43,6 +44,7 @@ function App() {
     setTransictionsPage(true);
   }
 
+  // Renderiza a página principal 
   return (
     <>
       <nav>
