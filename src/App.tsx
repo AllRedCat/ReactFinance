@@ -1,5 +1,6 @@
 // Imports
-import { Button } from "@/components/ui/button"
+//import { Button } from "@/components/ui/button"
+import { Button } from './components/ui/button';
 import { Home } from "./pages/Home"
 import { Accounts } from "./pages/Accounts"
 import { Categories } from "./pages/Categories"
@@ -82,7 +83,7 @@ function App() {
   return (
     <>
       <nav>
-        <Button variant="outline" onClick={HomeShow}>Home</Button>
+        <Button onClick={HomeShow}>Home</Button>
         <div>
           <Button variant="outline" onClick={AccountsShow}>Accounts</Button>
           <Button variant="outline" onClick={CategoriesShow}>Categories</Button>
