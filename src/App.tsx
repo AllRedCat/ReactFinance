@@ -6,6 +6,7 @@ import { Categories } from "./pages/Categories"
 import { Transictions } from "./pages/Transictions"
 import { Table } from "./pages/Table"
 import { useState } from "react"
+import "./App.css"
 
 // Pega os componentes das paginas
 function HomePage() {
@@ -82,12 +83,12 @@ function App() {
     <>
       <nav>
         <Button variant="outline" onClick={HomeShow}>Home</Button>
-        <>
+        <div>
           <Button variant="outline" onClick={AccountsShow}>Accounts</Button>
           <Button variant="outline" onClick={CategoriesShow}>Categories</Button>
           <Button variant="outline" onClick={TransictionsShow}>Transictions</Button>
           <Button variant="outline" onClick={TableShow}>Table</Button>
-        </>
+        </div>
       </nav>
       <main>
         {ShowHome && <HomePage />}
